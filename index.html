@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>银发守护者</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 首页 -->
+    <div id="home" class="page active">
+        <div class="home-container">
+            <h1 class="title">银发守护者</h1>
+            <p class="subtitle">防诈骗警示教育</p>
+            <button id="start-btn" class="start-btn">开始测试</button>
+            <p class="hint">点击按钮开始游戏，学习防诈骗知识</p>
+        </div>
+    </div>
+
+    <!-- 游戏场景页 -->
+    <div id="game" class="page">
+        <div class="game-container">
+            <div id="scene-intro" class="scene-intro">
+                <h2 id="scene-title" class="scene-title"></h2>
+                <p id="scene-description" class="scene-description"></p>
+            </div>
+            <div id="scene-content" class="scene-content">
+                <div id="dialogue" class="dialogue"></div>
+                <div id="options" class="options"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 胜利页面 -->
+    <div id="win" class="page">
+        <div class="result-container">
+            <h2 class="result-title">恭喜您！</h2>
+            <p class="result-message">世界上已没有事可以难倒您，小小骗术不在话下！</p>
+            <div id="win-case" class="case-content"></div>
+            <button id="play-again-btn" class="play-again-btn">再玩一次</button>
+        </div>
+    </div>
+
+    <!-- 失败页面 -->
+    <div id="lose" class="page">
+        <div class="result-container lose-container">
+            <h2 class="result-title lose-title">小心诈骗！</h2>
+            <p class="result-message lose-message">请小心类似的案件，保护好自己的财产安全！</p>
+            <div id="lose-case" class="case-content"></div>
+            <button id="play-again-btn-lose" class="play-again-btn">再玩一次</button>
+        </div>
+    </div>
+
+    <!-- 错误提示弹窗 -->
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <p>请冷静思考后再做选择！</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
